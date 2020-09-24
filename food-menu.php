@@ -1,7 +1,7 @@
 <?php
 
-require('./inc/utils.php');
-require('./inc/food-menu.php');
+require_once('./inc/utils.php');
+require_once('./inc/food-menu.php');
 
 get_header();
 
