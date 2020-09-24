@@ -1,0 +1,12 @@
+{
+  "context": "assets",
+  "entry": {
+    "main": ["./scripts/public.js", "./styles/public.scss"]
+  },
+  "output": {
+    "path": "dist",
+    "publicPath": "/dist/"
+  },
+  "devUrl": "http://p49menu.test",
+  "devPort": 3000
+}
