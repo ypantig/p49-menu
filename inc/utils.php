@@ -9,10 +9,32 @@ function get_footer() {
 }
 
 function export_static_html($file_name) {
-  $file = file_get_contents($file_name . '.php');
-  file_put_contents('static/' . $file_name . '.html', $file);
+  ob_start();
+  include($file_name . '.php');
+  $markup = ob_get_contents();
+
+  file_put_contents('static/' . $file_name . '.html', $markup);
+  ob_flush();
+
+  recurse_copy('assets/images/', 'static/assets/images/');
+  recurse_copy('dist/', 'static/dist/');
 }
 
+function recurse_copy($src,$dst) {
+  $dir = opendir($src);
+  @mkdir($dst);
+  while(false !== ( $file = readdir($dir)) ) {
+    if (( $file != '.' ) && ( $file != '..' )) {
+      if ( is_dir($src . '/' . $file) ) {
+        recurse_copy($src . '/' . $file,$dst . '/' . $file);
+      }
+      else {
+        copy($src . '/' . $file,$dst . '/' . $file);
+      }
+    }
+  }
+  closedir($dir);
+}
 
 /**
  * get the abspath url of the file
