@@ -1,0 +1,38 @@
+$grid-columns: 12;
+$spacer: 1rem;
+$grid-gutter-width: 30px;
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 200px,
+  sm: 600px,
+  md: 900px,
+  lg: 1100px,
+  xl: 1280px,
+  xxl: 1400px,
+  xxxl: 1600px,
+);
+
+$container-max-widths: (
+  sm: map-get($grid-breakpoints, sm) - $grid-gutter-width,
+  md: map-get($grid-breakpoints, md) - $grid-gutter-width,
+  lg: map-get($grid-breakpoints, lg) - $grid-gutter-width,
+  xl: map-get($grid-breakpoints, xl) - $grid-gutter-width,
+  xxl: map-get($grid-breakpoints, xxl) - $grid-gutter-width,
+  xxxl: map-get($grid-breakpoints, xxxl) - $grid-gutter-width,
+);
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$font-family-sans-serif: 'Bitter', serif;
+$font-size-base: px-to-rem(20);
+$border-color: $gray-900;

@@ -1,0 +1,7 @@
+.rotate-90 {
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    left: 0;
+    transform: rotate(-90deg);
+  }
+}
