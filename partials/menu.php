@@ -1,5 +1,5 @@
 
-<div class="row border-bottom mb-5 no-gutters border-top">
+<div class="row border-bottom mb-5 no-gutters">
   <?php foreach ($menu as $key => $column): ?>
     <div class="col-12 col-md-6 pt-md-5 <?php echo $key === 0 ? 'border-md-right' : ''; ?>">
       <?php foreach($column as $index => $group): ?>
