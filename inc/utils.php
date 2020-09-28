@@ -1,13 +1,5 @@
 <?php
 
-function get_header() {
-  include('./header.php');
-}
-
-function get_footer() {
-  include('./footer.php');
-}
-
 function export_static_html($file_name) {
   ob_start();
   include($file_name . '.php');

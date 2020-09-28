@@ -1,9 +1,6 @@
 <?php
 
 require_once('./inc/utils.php');
-// export_static_html('index');
-// export_static_html('beer-menu');
-
 include('./header.php');
 include('partials/page-title.php');
 ?>
