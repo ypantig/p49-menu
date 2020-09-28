@@ -1,7 +1,7 @@
 .page-title {
   position: sticky;
   z-index: $zindex-fixed;
-  top: 0;
+  top: -2px;
   background: $white;
 
   @include media-breakpoint-up(md) {
