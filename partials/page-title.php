@@ -10,8 +10,8 @@
         </nav>
       </div>
 
-      <div class="col-4 col-md-2 mx-auto order-1 order-md-2 position-relative">
-        <img class="py-5 py-sm-3 pl-lg-5 logo d-block mx-auto" src="./assets/images/p49-logo.png" alt="Parallel 49 Brewing Company" />
+      <div class="col-5 col-md-2 mx-auto order-1 order-md-2 position-relative">
+        <img class="py-3 py-sm-3 pl-lg-5 logo d-block mx-auto" src="./assets/images/p49-logo.png" alt="Parallel 49 Brewing Company" />
       </div>
     </div>
   </div>

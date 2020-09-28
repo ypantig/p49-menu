@@ -205,7 +205,7 @@ function beer_menu()
             'title' => 'Stunt Double IPA',
             'type' => 'Double Ale',
             'alcohol' => '8.0%',
-            'desc' => 'NOTICE: UNDEFINED OFFSET: 2 IN /VAR/WWW/P49_PAPER_MENUS/ON-TAP.PHP ON LINE 112',
+            'desc' => '',
             'price' => '5.75/7.75',
           ],
       ],

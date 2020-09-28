@@ -1,6 +1,6 @@
 <div class="col-12 col-md-6 pt-md-5 <?php echo $key === 0 ? 'border-md-right' : ''; ?>">
   <?php foreach($column as $index => $group): ?>
-    <div class="inner mb-5 <?php echo $key === 0 ? 'pr-md-5' : 'pl-md-5'; ?> pt-md-5 <?php echo $key === 0 && $index === 0 ? 'border-0' : 'border-top'; ?> <?php echo $key > 0 && $index === 0 ? 'border-md-0' : ''; ?>">
+    <div class="inner mb-5 <?php echo $key === 0 ? 'pr-md-5' : 'pl-md-5'; ?> <?php echo $index > 0 ? 'pt-5' : ''; ?> pt-md-5 <?php echo $key === 0 && $index === 0 ? 'border-0' : 'border-top'; ?> <?php echo $key > 0 && $index === 0 ? 'border-md-0' : ''; ?>">
       <h3 class="font-weight-bold text-uppercase <?php if (isset($group['desc'])) echo 'text-center'; ?>">
         <?php echo $group['title'] ?>
       </h3>
@@ -12,7 +12,7 @@
       <?php foreach ($group['menu'] as $item): ?>
         <dl>
           <dt class="row">
-            <h4 class="h5 col-10 mt-3">
+            <h4 class="h5 col-8 mt-3">
               <?php echo $item['title']; ?>
 
               <?php if (isset($item['gf'])): ?>
@@ -24,7 +24,7 @@
               <?php endif; ?>
             </h4>
 
-            <span class="col-2 text-right"><?php echo $item['price']; ?></span>
+            <span class="col-4 text-right"><?php echo $item['price']; ?></span>
 
             <?php if (isset($item['alcohol'])): ?>
               <span class="col-12">
@@ -36,7 +36,7 @@
             <?php endif; ?>
           </dt>
 
-          <?php if (isset($item['desc'])): ?>
+          <?php if (isset($item['desc']) && !empty($item['desc'])): ?>
           <dd>
             <span class="pr-5">
               <?php echo $item['desc']; ?>

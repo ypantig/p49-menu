@@ -6,5 +6,5 @@
   <link rel="stylesheet" href="<?php echo get_asset_path('styles/main.css'); ?>">
 </head>
 <body>
-  <main id="main">
+  <main id="main" class="w-100">
     <div class="container">

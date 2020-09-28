@@ -8,4 +8,8 @@
     transform: translateY(110%);
     background: transparent;
   }
+
+  &-text {
+    padding-top: $spacer * 2.5;
+  }
 }
