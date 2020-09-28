@@ -5,7 +5,7 @@
   background: $white;
 
   @include media-breakpoint-up(md) {
-    transform: translateY(56%);
+    transform: translateY(110%);
     background: transparent;
   }
 }
