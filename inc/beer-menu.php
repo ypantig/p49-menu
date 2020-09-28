@@ -3,7 +3,7 @@
 function beer_menu()
 {
   return $menu = [
-    [
+    [[
         'title' => 'Year Round',
         'menu' => [
           [
@@ -110,8 +110,8 @@ function beer_menu()
             'price' => '4.25/5.75',
           ],
       ],
-    ],
-    [
+    ]],
+    [[
       'title' => 'Fresh Release',
       'menu' => [
         [
@@ -242,6 +242,6 @@ function beer_menu()
             'price' => '6.75',
           ],
       ],
-    ],
+    ]],
   ];
 }

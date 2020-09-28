@@ -1,0 +1,11 @@
+.page-title {
+  position: sticky;
+  z-index: $zindex-fixed;
+  top: 0;
+  background: $white;
+
+  @include media-breakpoint-up(md) {
+    transform: translateY(56%);
+    background: transparent;
+  }
+}

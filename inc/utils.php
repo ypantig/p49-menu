@@ -1,11 +1,11 @@
 <?php
 
 function get_header() {
-  require_once('./header.php');
+  include('./header.php');
 }
 
 function get_footer() {
-  require_once('./footer.php');
+  include('./footer.php');
 }
 
 function export_static_html($file_name) {

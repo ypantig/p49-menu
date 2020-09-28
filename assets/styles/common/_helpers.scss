@@ -1,0 +1,17 @@
+.border-md-right {
+  @include media-breakpoint-up(md) {
+    border-right: 1px solid $border-color !important;
+  }
+}
+
+.border-md-top {
+  @include media-breakpoint-up(md) {
+    border-top: 1px solid $border-color !important;
+  }
+}
+
+.border-md-0 {
+  @include media-breakpoint-up(md) {
+    border-top: none !important;
+  }
+}

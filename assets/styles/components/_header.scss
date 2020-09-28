@@ -1,0 +1,23 @@
+.header {
+  @include media-breakpoint-up(md) {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: $zindex-fixed;
+    background-color: white;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 100%;
+
+    @include media-breakpoint-up(md) {
+      position: absolute;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 80%;
+    }
+  }
+}
