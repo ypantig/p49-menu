@@ -70,7 +70,7 @@ function get_home_url() {
 
 function get_dist_url()
 {
-  return get_home_url() . '/dist';
+  return './dist';
 }
 
 /**
@@ -108,10 +108,10 @@ function get_asset_path($file)
     $folder = $split[0];
     foreach ($assets as $key => $asset) {
       if (strpos($file, $key) > -1) {
-        return get_dist_url() . '/' . $folder . '/' . $asset;
+        return get_dist_url() .'/' . $folder . '/' . $asset;
       }
     }
   } else {
-    return get_dist_url() . '/' . $file;
+    return get_dist_url() .'/' . $file;
   }
 }
