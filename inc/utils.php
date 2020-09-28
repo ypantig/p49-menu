@@ -12,9 +12,10 @@ function export_static_html($file_name) {
   recurse_copy('dist/', 'static/dist/');
 }
 
-function recurse_copy($src,$dst) {
+function recurse_copy($src, $dst) {
   $dir = opendir($src);
   @mkdir($dst);
+
   while(false !== ( $file = readdir($dir)) ) {
     if (( $file != '.' ) && ( $file != '..' )) {
       if ( is_dir($src . '/' . $file) ) {
@@ -25,6 +26,7 @@ function recurse_copy($src,$dst) {
       }
     }
   }
+
   closedir($dir);
 }
 
