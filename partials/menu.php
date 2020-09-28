@@ -1,6 +1,6 @@
 <div class="col-12 col-md-6 pt-md-5 <?php echo $key === 0 ? 'border-md-right' : ''; ?>">
   <?php foreach($column as $index => $group): ?>
-    <div class="inner mb-5 <?php echo $key === 0 ? 'pr-md-5' : 'pl-md-5'; ?> pt-5 <?php echo $key === 0 && $index === 0 ? 'border-0' : 'border-top'; ?> <?php echo $key > 0 && $index === 0 ? 'border-md-0' : ''; ?>">
+    <div class="inner mb-5 <?php echo $key === 0 ? 'pr-md-5' : 'pl-md-5'; ?> pt-md-5 <?php echo $key === 0 && $index === 0 ? 'border-0' : 'border-top'; ?> <?php echo $key > 0 && $index === 0 ? 'border-md-0' : ''; ?>">
       <h3 class="font-weight-bold text-uppercase <?php if (isset($group['desc'])) echo 'text-center'; ?>">
         <?php echo $group['title'] ?>
       </h3>
